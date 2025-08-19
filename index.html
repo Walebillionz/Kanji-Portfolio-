@@ -2,7 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Project2</title>
+    <title>My portfolio</title>
     <style>
       
       *{
@@ -17,8 +17,8 @@
         font-family: Arial, Sans-Serif;
       
       }
-      img{
-        width: 50px;
+      i{
+        margin-right: 15px;
       }
       section{
         
@@ -28,7 +28,7 @@
         position: fixed;
         background: #202124;
         width: 100%;
-        padding: 10px;
+        padding: 20px;
         top: 0;
         right: 0;
         left: 0;
@@ -40,19 +40,24 @@
         color: white;
         text-decoration: none;
         font-weight: 600;
-        font-size: 18px;
+        font-size: 40px;
       }
       
       nav a:hover{
         color: #ff6b6b;
       }
+      nav a.active {
+  color: #1a73e8;
+  border-bottom: 2px solid #1a73e8;
+  padding-bottom: 5px;
+}
       
       section#home{
   
       }
       section#home img{
-        width: 140px;
-        height: 140px;
+        width: 340px;
+        height: 340px;
         border-radius: 50%;
         margin-top: 50px;
       }
@@ -66,7 +71,7 @@
         margin-bottom: 50px;
       }
       section#home button{
-        width: 200px;
+        width: 300px;
         padding: 15px;
         border-radius: 4px;
         border: none;
@@ -75,7 +80,7 @@
         margin-bottom: 40px;
       }
       section#home button a{
-        font-size: 18px;
+        font-size: 38px;
         color: white;
         text-decoration: none;
         font-weight: 700;
@@ -86,8 +91,8 @@
         margin-bottom: 50px;
       }
       section#about img{
-        width: 240px;
-        height: 270px;
+        width: 700px;
+        height: 730px;
         rotate: -9deg;
         margin-left: 50px;
         margin-bottom: 30px;
@@ -101,55 +106,35 @@
       }
       
       section#about div{
-        background: lightblue;
+        background: darkblue;
         display: inline;
-        font-size: 25px;
-        padding: 10px;
+        font-size: 56px;
+        padding: 15px;
         margin: 10px;
-        border-radius: 3px;
+        border-radius: 30px;
       }
       section#service div{
-        background: lightblue;
-        font-size: 25px;
+        background: purple;
+        font-size: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 10px;
         margin: 10px;
         border-radius: 3px;
-        margin-top: 30px;
+        margin-top: 60px;
+        width: 500px;
+        margin-left: 200px;
+        border-radius: 7px;
+        text-align: center;
       }
-      section#contact div.box{
-        color: black;
-        background: white;
-        width: 300px;
-        padding: 5px;
-        border-radius: 4px;
-        overflow: hidden;
-      }
-      input{
-        width: 100%;
-        font-size: 16px;
-        height: 30px;
-        margin-bottom: 10px;
-      }
-      section#contact{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-      }
-      section#contact button{
-        width: 100px;
-        background: ;
-         padding: 15px;
-        border-radius: 4px;
-        border: none;
-        color: white;
-        background: #1a738e;
-      }
+      
   .back-to-top {
   position: fixed;
   bottom: 30px;
   right: 30px;
   background: #ff6b6b;
+  font-size: 40px;
   color: white;
   padding: 10px 15px;
   border-radius: 5px;
@@ -162,7 +147,74 @@
 body:has(:target:not(#Home)) .back-to-top {
   display: block; 
 }
-      
+.contact-box {
+  text-align: center;
+  background: white;
+  padding: 50px;              /* Bigger padding */
+  border-radius: 12px;        /* Bigger rounded corners */
+  width: 500px;               /* Wider box */
+  margin: auto;
+  box-shadow: 0px 6px 25px rgba(0,0,0,0.15);
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+.contact-box h2 {
+  margin-bottom: 15px;
+  font-size: 42px;            /* Bigger title */
+  color: #222;
+}
+
+.contact-box p {
+  margin-bottom: 25px;
+  font-size: 28px;            /* Bigger paragraph */
+  color: #444;
+}
+
+.email-btn {
+  display: inline-block;
+  background: #ff6b6b;
+  color: white;
+  padding: 18px 35px;         /* Bigger button */
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;            /* Larger text */
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.email-btn:hover {
+  background: #e63946;
+  transform: scale(1.05);     /* Small zoom effect */
+} 
+
+
+footer {
+  background: #202124;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer .socials {
+  margin-bottom: 10px;
+}
+
+footer .socials a {
+  color: white;
+  margin: 0 10px;
+  font-size: 58px;
+  transition: color 0.3s ease;
+}
+
+footer .socials a:hover {
+  color: #ff6b6b; /* same hover effect as nav */
+}
+
+footer p {
+  font-size: 14px;
+  color: #aaa;
+}
     </style>
   </head>
   <body>
@@ -192,14 +244,14 @@ Beyond the code, I’m motivated by a simple goal: to become a successful progra
 </h3>
 <h1 id="skill"><i class="fa-solid fa-screwdriver-wrench"></i>Skills</h1>
 <div>HTML</div>
-<div style="background:lightpink;">CSS</div>
-<div style="background: lightgreen;">JavaScript</div>
+<div style="background:red;">CSS</div>
+<div style="background: orange;">JavaScript</div>
    </section>
     
     
     <section id="service">
       
-      <div style="background:lightpink;"><h2><i class="fa-brands fa-web-awesome"></i>Web Designing</h2>
+      <div style="background:violet;"><h2><i class="fa-brands fa-web-awesome"></i>Web Designing</h2>
       </div>
       
       <div style="background:lightgreen;"><h2><i class="fa-solid fa-school"></i>HTML Class</h2>
@@ -215,17 +267,25 @@ Beyond the code, I’m motivated by a simple goal: to become a successful progra
     </section>
     
     <section id="contact">
+      <div class="contact-box">
+    <h2><i class="fa-solid fa-envelope"></i> Get in Touch</h2>
+    <p>If you’d like to reach me, click below:</p>
+    <a href="dosumuadewale5@gmail.com" class="email-btn">Email Me</a>
+  </div>
       
-      <div class="box">
-        <h2>Form</h2>
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-        <input type="text" placeholder="Message">
-        <button>Submit</button>
-      </div>
     </section>
     <a href="#home">
     <button class="back-to-top">Back to top</button>
     </a>
+    
+  <footer>
+  <div class="socials">
+    <a href="https://github.com/yourusername" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="https://twitter.com/yourusername" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+    <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://instagram.com/yourusername" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+  <p>&copy; 2025 Kanji | All Rights Reserved</p>
+</footer>
   </body>
 </html>
